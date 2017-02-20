@@ -1,8 +1,9 @@
 apply plugin: 'com.android.library'
-// JitPack Maven
+
 apply plugin: 'com.github.dcendents.android-maven'
 
-group='https://github.com/Jomes'
+group = 'com.github.Jomes'
+
 
 android {
     compileSdkVersion 24
