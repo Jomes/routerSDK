@@ -44,7 +44,7 @@ init RouteTable in application
 ```
 Router Jump page
 ```
-      Router.build("http://androidblog.cn/index.php/Source").start(MainActivity.this);
+ Router.build("http://androidblog.cn/index.php/Source").start(MainActivity.this);
 ```
 Definition Of type
 - Scheme:suggest to define application name which router to use
