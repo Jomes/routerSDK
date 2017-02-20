@@ -1,7 +1,6 @@
 
 #RouterSDK
-RouterSDK is excellent Router framwork ,it is easy to  integrate in your project.
-You can start the application through the web page by the custom parameters, but also provides a number of useful features such as dynamic routing configuration, jump animation, task station, jump pretreatment, etc..
+RouterSDK is an excellent Router framwork ,it is easy to integrate in your project. You can start an application through the web page by the custom parameters.  In addition, it   can also provides a number of useful features such as dynamic routing configuration, jump animation, task station, jump pretreatment, etc.
 
 ## Screenshot
 ![route](./gif/routersdk.gif)
