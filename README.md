@@ -45,7 +45,17 @@ init RouteTable in application
 ```
 Router Jump page
 ```
-       Router.build("http://androidblog.cn/index.php/Source").start(MainActivity.this);
-
+      Router.build("http://androidblog.cn/index.php/Source").start(MainActivity.this);
 ```
+Definition Of type
+jomeslu://www?{i:id}=168&{s:jomeslu}=jomeslu
+- Scheme:suggest to define application name which router to use
+- Host: suggest to define page where to go, such activity
+- path : Transfer parameter,customer type
+
+|   key format |  {i:ikey}  | {f:key} | {l:key}  | {d:key}    |  {s:key}  | {b:key} |
+|   :-------:  |:--------:  | :------:| :------: | :--------: |  :-------:| :----:  |
+|   type       |   integer  |  float  |   long   |   double   |   string  | boolean |
+
+
 
