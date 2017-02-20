@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SDK Demo</string>
+    <string name="title_activity_login_acitivity">LoginAcitivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+</resources>
