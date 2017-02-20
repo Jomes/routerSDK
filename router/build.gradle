@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 // JitPack Maven
 apply plugin: 'com.github.dcendents.android-maven'
 
-group='jomeslu.com.router'
+group='https://github.com/Jomes'
 
 android {
     compileSdkVersion 24
