@@ -48,7 +48,6 @@ Router Jump page
       Router.build("http://androidblog.cn/index.php/Source").start(MainActivity.this);
 ```
 Definition Of type
-jomeslu://www?{i:id}=168&{s:jomeslu}=jomeslu
 - Scheme:suggest to define application name which router to use
 - Host: suggest to define page where to go, such activity
 - path : Transfer parameter,customer type
@@ -57,5 +56,32 @@ jomeslu://www?{i:id}=168&{s:jomeslu}=jomeslu
 |   :-------:  |:--------:  | :------:| :------: | :--------: |  :-------:| :----:  |
 |   type       |   integer  |  float  |   long   |   double   |   string  | boolean |
 
+eg :From A page to B page use url :jomeslu://www?{i:id}=168&{s:jomeslu}=jomeslu
 
+A page
+```
+ Router.build("jomeslu://www?{i:id}=168&{s:jomeslu}=jomeslu").setIRouteInterceptor(new IRouteInterceptor() {
+                    @Override
+                    public boolean interceptor() {
+                        Router.build("jomeslu://loginactivity?{i:id}=168&{s:jomeslu}=jomeslu").start(MainActivity.this);
+                        Toast.makeText(MainActivity.this, "login...", Toast.LENGTH_LONG).show();
+
+                        return true;
+                    }
+                }).start(MainActivity.this);;
+```
+B Page Receive parameter as normal
+```
+        String jomeslu = getIntent().getStringExtra("jomeslu");
+        int id = getIntent().getIntExtra("id", -1);
+```
+## Recommend
+
+* [android blog](http://www.androidblog.cn/)
+* [android tool ](http://androidblog.cn/tools/)
+* [android source ](http://www.androidblog.cn/index.php/Source)
+
+## License
+
+* [Apache Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
 
